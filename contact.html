@@ -92,7 +92,8 @@
         </div>
     </div>
     <script>
-        document.getElementById('submitButton').addEventListener('click', function() {
+        document.getElementById('submitButton').addEventListener('click', function(event) {
+        event.preventDefault(); // This stops the page from reloading instantly
         alert('Message sent successfully!');
         });
     </script>
