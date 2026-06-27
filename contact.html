@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="header">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Company Logo">
+        </a>
+        
+        <input type="checkbox" id="menu" class="menu-checkbox">
+
+        <label for="menu" class="menu-toggle">&#9776;</label>
+
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="things-to-do.html">Things to do</a>
+            <a href="visitor-info.html">Visitor Info</a>
+            <a class="active" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="textbox">
+            <div class="heading">
+                <h1> Contact Us</h1>
+            </div>
+            <br>
+            <p>
+                If you have any questions about visiting Buckingham Palace, you can use the contact form below
+                or use the provided contact details. (Please do not enter any personal information.)
+            </p>
+            <br>
+            <div class="textbox2">
+                <form>
+                    <label>Name:</label>
+                    <br>
+                    <input type="text" placeholder="Enter your name">
+                    <br>
+                    <br>
+                    <label>Email:</label>
+                    <br>
+                    <input type="text" placeholder="Enter your Email">
+                    <br>
+                    <br>
+                    <label>Subject:</label>
+                    <br>
+                    <input type="text" placeholder="Subject">
+                    <br>
+                    <br>
+                    <label>Message:</label>
+                    <br>
+                    <textarea rows="5" placeholder="Type your Inquiry here" style="font-family: Arial, Helvetica, sans-serif;"></textarea>
+                    <br>
+                    <button type="button"
+                    id="submitButton">
+                    Submit
+                        </button>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="textbox">
+            <div class="heading">
+                <h2>Contact Details &#128204;</h2>
+            </div>
+            <br>
+            <p>
+                <b>Direct Address:</b><br>
+                Buckingham Palace <br>
+                London SW1A 1AA <br>
+                United Kingdom <br>
+                <br>
+                <b>Discover Buckingham Palace</b><br>
+                Phone: <u>+44 0233 123 4567</u><br>
+                Email: <u>info@discovrbpb.com</u>
+            </p>
+        </div>
+        <br>
+        <div class="textbox">
+            <p><i style="opacity: 50%; font-size: 11px;">
+                Disclaimer: This website is for educational purposes only and is not affiliated with
+                Buckingham Palace or the Royal Family.
+            </i></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function(event) {
+        alert('Message sent successfully!');
+        });
+    </script>
+</body>
+</html>
